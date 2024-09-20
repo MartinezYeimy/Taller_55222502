@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller</title>
+    <link rel="stylesheet" href="css/taller.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1 id="nombreapp">NOTAS&#128209;</h1> 
+            <p>Yeimy Martínez</p>
+        </div>
+
+        <div class="main-content">
+            <table id="Actividades">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Actividad</th>
+                        <th>Nota</th>   
+                    </tr>
+                </thead>
+                <tbody id="actividades"> 
+                </tbody>
+            </table>
+        </div>
+
+        <div class="right-panel">
+            
+            <p>Promedio: <span id="promedio">0</span></p>
+            <p>Estado: <span id="status">Aprobado - No aprobado</span></p>
+
+           
+            <form id="addActivityForm">
+                <label for="actividad">Actividad:</label>
+                <input type="text" id="actividad" required>
+                <label for="nota">Nota:</label>
+                <input type="number" id="nota" min="0" max="5" required>
+                <button type="button" id="guardar">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+    <div id="modal" class="modalc">
+        <div class="modal-content">
+            <p>¿Desea eliminar esta actividad?</p>
+            <button id="modalsi">Sí</button>
+            <button id="modalno">No</button>
+        </div>
+    </div>
+
+    <script src="JS/taller.js"></script>
+</body>
+</html>
